@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(248, 230, 206);
+}
+.container{
+   height: 100vh;
+}
+.signup,
+.signin{
+    width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.signupimg,
+.signinimg{
+    height: 100%;
+    width: 100%;
+}
+.signupimg img,
+.signinimg img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 0px 0px;
+    
+}
+.form-header h3{
+    font-weight: 700 !important;
+}
+.form-control{
+    box-shadow: none !important;
+}
+.errormsg{
+    top: 94%;
+    left: 6%;
+    width: 60%;
+}
+.errormsg span{
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+
+}
+#fname1,
+#lname1,
+#email1,
+#tell1,
+#pass1,
+#cpass1{
+    visibility: hidden;
+}
+
+ @media(max-width:960px){
+    .signup,
+    .signin{
+        width: 720px;
+        
+    }
+
+ }
+
+ @media(max-width:767px){
+    .signup{
+        width: 90%;
+        transform: translate(-50% , -45%);
+        
+    }
+    .signin{
+        width: 90%;
+        transform: translate(-50% , -60%);
+    }
+    .img-section{
+        height: 250px;
+    }
+    .signupimg img,
+    .signinimg img{
+        border-bottom-left-radius: 0px !important;
+        border-top-right-radius: 0.5rem !important;
+    }
+    .errormsg{
+        width: 55% !important;
+    }
+ }
+ @media(max-width:575px){
+    .errormsg{
+        width: 65% !important;
+    }
+ }
